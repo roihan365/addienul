@@ -8,7 +8,7 @@
                 aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
             </button>
-            <div class="collapse navbar-collapse" id="navb">
+            <div class="collapse navbar-collapse" id="navbarNavDropdown">
                 <ul class="navbar-nav ms-auto mr-3">
                     <li class="nav-item mx-md-2">
                         <a href="#beranda" class="nav-link active">Beranda</a>
