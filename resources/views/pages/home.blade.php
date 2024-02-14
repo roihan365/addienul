@@ -7,16 +7,12 @@
 @section('content')
     <!-- Header -->
     <header class="text-center test-header" id="beranda">
-        <h1>Selamat datang di
-            <br>
-            Masjid Ad-Dienul Amin
+        <h1>{!! $data->hero_title !!}
         </h1>
-        <p class="mt-3">Bersama-sama kita membangun
-            <br>
-            kebersamaan dan spiritualitas
+        <p class="mt-3">{!! $data->hero_subtitle !!}
         </p>
-        <a href="https://youtube.com/@Ad-DienulAminCitralandTV" target="_BLANK" class="btn btn-youtube px-4 mt-4">Lihat Video
-            Kajian Online</a>
+        <a href="{{ $data->hero_button_url }}" target="_BLANK"
+            class="btn btn-youtube px-4 mt-4">{{ $data->hero_button_text }}</a>
     </header>
     <main>
         {{-- <div class="container">
@@ -44,11 +40,9 @@
             <div class="container">
                 <div class="row">
                     <div class="col text-center section-popular-heading">
-                        <h2>Eksplorasi Spiritual</h2>
+                        <h2>{{ $data->kajian_title }}</h2>
                         <p>
-                            Temukan makna yang mendalam melalui Kajian, Pengajian, dan
-                            <br>
-                            kegiatan rutin lainnya di Masjid Ad-Dienul Amin.
+                            {!! $data->kajian_subtitle !!}
                         </p>
                     </div>
                 </div>
@@ -136,24 +130,8 @@
                                         alt="">
                                 </div>
                                 <div class="col-12 col-md-8">
-                                    <h2 class="mb-2 my-4 my-md-0">Berinfaq Mudah Dalam Genggaman</h2>
-                                    <p class="">
-                                        Tidak hanya menghadirkan kemudahan beribadah, Masjid Ad-Dienul Amin juga menyediakan
-                                        cara berinfaq menjadi lebih modern dan praktis.
-
-                                    </p>
-                                    <p>
-                                        Dengan memanfaatkan teknologi QRIS, jama'ah dapat berinfaq dengan mudah
-                                        melalui aplikasi pembayaran digital seperti DANA, OVO, Gopay, Shopee Pay, dan
-                                        lainnya.
-                                    </p>
-                                    <p>
-                                        Tidak perlu lagi repot dengan kotak infaq konvensional, sekarang berinfaq dapat
-                                        dilakukan dengan sekali scan QR Code.
-                                    </p>
-                                    <h3>
-                                        Scan QR Code di samping dan berikan infaq terbaik.
-                                    </h3>
+                                    <h2 class="mb-2 my-4 my-md-0">{{ $data->infaq_title }}</h2>
+                                    {!! $data->infaq_subtitle !!}
                                 </div>
                             </div>
                         </div>
@@ -188,8 +166,7 @@
                                                 width="32" height="32" class="icon-address"> Alamat
                                         </h3>
                                         <p class="testimonial">
-                                            Citraland cluster the fortuna, KM 7, Kec. Kertak Hanyar, Kabupaten Banjar,
-                                            Kalimantan Selatan
+                                            {{ $data->informasi_address }}
                                         </p>
                                     </div>
                                     <div class="col-12 col-md-4 my-2 my-md-0">
@@ -199,10 +176,10 @@
                                             Kontak
                                         </h3>
                                         <p class="testimonial">
-                                            (+62) 821-5133-1234 (Pak Ustadz)
+                                            {{ $data->informasi_phone1 }}
                                         </p>
                                         <p class="testimonial">
-                                            (+62) 821-5133-1234 (Pak Ustadz)
+                                            {{ $data->informasi_phone2 }}
                                         </p>
                                     </div>
                                     <div class="col-12 col-md-4 my-2 my-md-0">
@@ -212,7 +189,7 @@
                                             Email
                                         </h3>
                                         <p class="testimonial">
-                                            addienulamin@gmail.com
+                                            {{ $data->informasi_email }}
                                         </p>
                                     </div>
                                 </div>

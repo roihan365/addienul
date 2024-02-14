@@ -28,10 +28,10 @@
                         <div class="card mb-0">
                             <div class="card-body">
                                 <a href="./index.html" class="text-nowrap logo-img text-center d-block py-3 w-100">
-                                    <x-application-logo/>
+                                    <x-application-logo />
                                     {{-- <x-application-logo class="w-20 h-20 fill-current text-gray-500" /> --}}
                                 </a>
-                                <p class="text-center">Your Social Campaigns</p>
+                                {{-- <p class="text-center">Your Social Campaigns</p> --}}
                                 {{ $slot }}
                             </div>
                         </div>

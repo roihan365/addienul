@@ -1,5 +1,5 @@
 <div class="container fixed-top">
-    <nav class="row navbar navbar-expand-lg navbar-light bg-white z-2">
+    <nav class="row navbar navbar-expand-lg navbar-light bg-white z-2 shadow">
         <div class="container">
             <a class="navbar-brand" href="#">
                 <img src="{{ asset('assets/img/logo.png') }}" alt="Logo masjid" width="30" height="24">

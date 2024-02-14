@@ -7,10 +7,10 @@
 
         <!-- Email Address -->
         <div class="mb-3">
-            <x-input-label for="email" :value="__('Email')" />
-            <x-text-input id="email" type="email" name="email" :value="old('email')" required autofocus
+            <x-input-label for="username" :value="__('Username')" />
+            <x-text-input id="username" type="text" name="username" :value="old('username')" required autofocus
                 autocomplete="username" />
-            <x-input-error :messages="$errors->get('email')" class="mt-2" />
+            <x-input-error :messages="$errors->get('username')" class="mt-2" />
         </div>
 
         <!-- Password -->
@@ -41,9 +41,9 @@
             {{ __('Log in') }}
         </x-primary-button>
 
-        <div class="d-flex align-items-center justify-content-center">
+        {{-- <div class="d-flex align-items-center justify-content-center">
             <p class="fs-4 mb-0 fw-bold">New to Modernize?</p>
             <a class="text-primary fw-bold ms-2" href="{{ route('register') }}">Create an account</a>
-        </div>
+        </div> --}}
     </form>
 </x-guest-layout>
